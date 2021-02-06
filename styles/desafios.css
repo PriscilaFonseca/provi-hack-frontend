@@ -1,0 +1,38 @@
+h1{
+    margin: 100px auto 50px;
+}
+
+div#cards{
+    overflow-y: auto;
+    height: 60vh;
+}
+
+div.desafio-card{
+    margin: 20px auto;
+    height: 60px;
+    background-color: #F6F4FF;
+    padding: 0 30px;
+    border-radius: 5px;
+}
+
+div.desafio-card p{
+    margin: 0;
+}
+
+div.stack{
+    height: 28px;
+    background-color: #E0DCFA;
+    width: 125px;
+    border-radius: 2px;
+}
+
+p#contato{
+    margin-top: 20px;
+    color: #4e4e4e;
+}
+
+p#contato a{
+    margin-left: 10px;
+    color: #6651e4;
+    font-weight: 700;
+}
