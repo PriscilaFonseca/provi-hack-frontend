@@ -2,6 +2,8 @@ h1{
     margin: 100px auto 50px;
 }
 
+/* cards desafios */
+
 div#cards{
     overflow-y: auto;
     height: 60vh;
@@ -15,8 +17,20 @@ div.desafio-card{
     border-radius: 5px;
 }
 
-div.desafio-card p{
+div.desafio-card:hover{
+    background-color: #e3e2ec;
+}
+
+a.link-desafio{
+    height: 100%;
+}
+
+a.link-desafio p{
     margin: 0;
+}
+
+a.link-desafio:hover{
+    color: #4e4e4e;
 }
 
 div.stack{
@@ -25,6 +39,9 @@ div.stack{
     width: 125px;
     border-radius: 2px;
 }
+
+
+/* sugestão desafio */
 
 p#contato{
     margin-top: 20px;

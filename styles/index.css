@@ -5,10 +5,6 @@ button#btn-desafio{
     height: 48px;
 }
 
-button#btn-desafio:hover{
-    background-color: #3a2a96;
-}
-
 img#mockup{
     width: 130%;
     position: relative;

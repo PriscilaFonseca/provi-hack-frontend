@@ -17,6 +17,10 @@ button{
     border: 0;
 }
 
+button:hover{
+    background-color: #3a2a96;
+}
+
 /* Menu Navegação / Header */
 ul#nav{
     display: flex;
