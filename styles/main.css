@@ -49,6 +49,18 @@ li#login{
     font-weight: 700;
 }
 
+/* ESTILIZAÇÃO DA SCROLLBAR */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:  #dddddda2;
+    border-radius: 10px;
+    scrollbar-base-color: #dddddda2;
+}
+
 
 /* FOOTER */
 footer{
@@ -73,7 +85,7 @@ footer div p{
 
 
 
-/* CLASSES MODELO */
+/* FONTES */
 .font-1{
     font-size: 36px;
 }
@@ -88,4 +100,31 @@ footer div p{
 
 .font-4{
     font-size: 16px;
+}
+
+
+/* CORES STACK */
+
+.front{
+    background-color: rgba(224, 220, 250, 0.7);
+}
+
+.back{
+    background-color: rgba(209, 234, 221, 0.7);
+}
+
+.mob{
+    background-color: rgba(252, 216, 225, 0.7);
+}
+
+.data{
+    background-color: rgba(240, 230, 218, 0.7);
+}
+
+.ui{
+    background-color: rgba(216, 234, 238, 0.7);
+}
+
+.default{
+    background-color: rgba(219, 219, 219, 0.7);
 }
