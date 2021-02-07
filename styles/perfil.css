@@ -1,8 +1,7 @@
 /* seção de dados */
 
 #dados{
-    background-color: #533FCD;
-    color: white;
+    background-color: #F3F1FE;
     padding: 50px 0;
     position: relative;
 }
@@ -18,12 +17,16 @@ h2{
     font-weight: 700;
 }
 
+h3{
+    color: #6651E4;  
+}
+
 #contatos{
     margin-top: 50px;
 }
 
 #contatos a{
-    color: white;
+    color: #6651E4;
     font-weight: 700;
 }
 

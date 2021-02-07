@@ -58,6 +58,19 @@ p#cadastro a:hover{
     color: #3a2a96;
 }
 
+div#termo{
+    margin-top: 30px;
+}
+
+#termo p{
+    font-size: 12px;
+}
+
+#termo p a{
+    color: #6651e4;
+    text-decoration: underline;
+    font-weight: 700;
+}
 
 
 /* divisão da tela */

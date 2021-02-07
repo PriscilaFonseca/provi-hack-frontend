@@ -10,12 +10,26 @@ img#mockup{
     position: relative;
     right: 11%;
     top: 10%;
+    z-index: 10;
 }
 
 /* seção sobre */
 div#sobre{
     width: 100vw;
     background-color: #6651e4;
+    position: relative;
+}
+
+div#sobre img#i1{
+    position: absolute;
+    top: -100px;
+}
+
+div#sobre img#i2{
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    transform: rotate(180deg);
 }
 
 div#sobre-text{
@@ -43,8 +57,32 @@ div#sobre-text p.font-4{
 /* seção contate-nos */
 div#empresas{
     margin: 50px auto;
+    position: relative;
+}
+
+div#empresas img{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 div#empresas p.font-1{
     margin: 0;
+}
+
+div#empresas p#citacao{
+    margin: 50px 0;
+    padding-left: 10px;
+    position: relative;
+}
+
+p#citacao img{
+    position: absolute;
+    left: -10px;
+    top: -5px;
+}
+
+p.purple{
+    margin-top: 30px;
+    color: #6651e4;
 }

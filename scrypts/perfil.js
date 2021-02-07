@@ -26,6 +26,10 @@ window.addEventListener('load', function dados(){
                 nome.innerText = usuario.name;
                 descricao.innerText = usuario.company.catchPhrase;
 
+                console.log(usuario.id)
+
+                //usuario.id =! '' ? linkedin.href = 'https://www.linkedin.com/in/larrydiniz/' : linkedin.target = ''
+
                 linkedin.href = usuario.linkedin
                 github.href = usuario.github
                 behance.href = usuario.behance

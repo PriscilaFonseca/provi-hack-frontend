@@ -13,11 +13,10 @@
 <body>
     <header class="col-md-10 m-auto row justify-content-between">
         <a class="col-md-2" href="index.html"><img src="./icons/logo.svg" height="61px" alt="Logo da Desafie"></a>
-        <ul class="col-md-6" id="nav">
-            <a href=""><li>O que é</li></a>
+        <ul class="col-md-4" id="nav">
             <a href="./desafios.html"><li>Desafios</li></a>
             <li id="dropdown">
-                <label for="dropdown">Fulano</label> 
+                <label for="dropdown" id="nome-menu"><!-- nome --></label> 
                 <img src="./icons/dropdwon.svg" alt="seta para baixo">
                 <ul>
                     <a href="./meus-desafios.html"><li>Meus Desafios</li></a>
@@ -28,27 +27,12 @@
         </ul>
     </header>
     <main>
-        <h1 class="font-1 col-md-10">Últimos desafios</h1>
+        <h1 class="font-1 col-md-10">Meus desafios</h1>
         <div class="col-md-10 m-auto" id="cards">
-            <div class="desafio-card">
-                <a class="d-flex justify-content-between align-items-center link-desafio" href="./pagina-desafio.html">
-                    <p class="font-3">Página de apresentação de candidato</p>
-                    <div class="d-flex justify-content-between">
-                        <div class="stack font-4 d-flex justify-content-center align-items-center"> FRONTEND </div>
-                        <div class="status font-4 d-flex justify-content-center align-items-center"> CONCLUÍDO </div>
-                    </div>
-                </a>
-            </div>
-            <div class="desafio-card">
-                <a class="d-flex justify-content-between align-items-center link-desafio" href="">
-                    <p class="font-3">API de Clientes</p>
-                    <div class="d-flex justify-content-between">
-                        <div class="stack font-4 d-flex justify-content-center align-items-center"> BACKEND </div>
-                        <div class="status font-4 d-flex justify-content-center align-items-center"> CONCLUÍDO </div>
-                    </div>
-                </a>
-            </div>
+          <!-- desafios do usuário -->
         </div>
     </main>
+    <!-- JavaScript -->
+    <script src="./scrypts/meus-desafios.js"></script>
 </body>
 </html>

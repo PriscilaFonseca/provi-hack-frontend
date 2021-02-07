@@ -55,8 +55,22 @@ div#detalhe{
 }
 
 div#detalhe img{
-    width: 60%;
     position: absolute;
-    bottom: 2%;
+}
+
+img#i1{
+    width: 25%;
+    transform: rotate(200deg);
+    right: 0;
+}
+
+img#i2{
+    width: 90%;
+    left: -50px;
+}
+
+img#i3{
+    width: 60%;
+    bottom: 0;
     right: 0;
 }
