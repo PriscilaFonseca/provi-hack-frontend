@@ -49,6 +49,30 @@ li#login{
     font-weight: 700;
 }
 
+
+/* FOOTER */
+footer{
+    background-color: #E0DCFA;
+    font-size: 14px;
+    padding: 50px 0;
+}
+
+footer h4{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer div p{
+    text-align: end;
+}
+
+
+
 /* CLASSES MODELO */
 .font-1{
     font-size: 36px;
