@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="shortcut icon" href="./icons/imagotipo.ico">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body class="row">
+    <div class="col-md-6">
+        <header class="col-md-8 m-auto row justify-content-between">
+            <a class="col-md-2" href="index.html"><img src="./icons/logo.svg" height="61px" alt="Logo da Desafie"></a>
+        </header>
+        <main class="d-flex align-self-center">
+            <div class="col-md-8 m-auto" id="login">
+                <h1 class="font-1">Criar conta</h1>
+                <p class="font-4">Você está a poucos passos de se tornar ainda mais incrível!</p>
+
+                <form method="POST">
+                    <h3>Dados Principais</h3>
+                    <hr>
+                        <label for="nome">Nome Completo</label>
+                        <input class="col-md-12" type="text" id="nome" placeholder="email@dominio.com">
+
+                        <label for="user">Usuário</label>
+                        <input class="col-md-12" type="text" id="user" placeholder="Seu usuário">
+                        
+                        <label for="telefone">Telefone</label>
+                        <input class="col-md-12" type="text" id="telefone" placeholder="(99 99999-9999)">
+
+                        <label for="uf">Estado</label>
+                        <input class="col-md-12" type="text" id="uf" placeholder="Estado em que mora">
+                        
+                        <label for="email">Email</label>
+                        <input class="col-md-12" type="email" id="email" placeholder="email@dominio.com">
+
+                        <label for="senha">Senha</label>
+                        <input class="col-md-12" type="password" id="senha" placeholder="Sua senha">
+
+                    <h3>Sobre seus interesses</h3>
+                    <hr>
+
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" name="descricao" rows="5" cols="50"
+                        placeholder="Descreva rapidamente sobre você.                        Recrutadores vão focar nessa apresentação.                     Seja objetivo(a)! :-)"></textarea>
+
+                        <label for="interesses">Qual seu maior interesse?</label>
+                        <select class="form-control" id="interesses">
+                            <option>FullStack</option>
+                            <option>Frontend</option>
+                            <option>Backend</option>
+                            <option>Mobile</option>
+                            <option>UX/UI</option>
+                            <option>Data</option>
+                        </select>
+
+                        <label for="tecnologias">Tecnologias que você mais gosta</label>
+                        <input class="col-md-12" type="password" id="tecnologias" placeholder="Javascript, .NET, React, HTML, CSS, Figma, etc.">
+                    
+                    <h3>Links Importantes</h3>
+                    <hr>
+
+                        <label for="linkedin">LinkedIn</label>
+                        <input class="col-md-12" type="text" id="linkedin">
+
+                        <label for="github">GitHub</label>
+                        <input class="col-md-12" type="text" id="github">
+                        
+                        <label for="behance">Behance</label>
+                        <input class="col-md-12" type="text" id="behance">
+
+                </form>
+
+                <button>Criar minha conta</button>
+            </div>
+        </main>
+    </div>
+    <div class="col-md-6" id="detalhe">
+        <img src="./icons/imagotipo.png" alt="imagotipo da marca">
+    </div>
+</body>
+</html>

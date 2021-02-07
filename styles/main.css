@@ -21,6 +21,13 @@ button:hover{
     background-color: #3a2a96;
 }
 
+input:hover, input:focus, 
+textarea:hover, textarea:focus, 
+select:hover, select:focus{
+    outline: none !important;
+    border-color: #6651e4;
+}
+
 /* Menu Navegação / Header */
 ul#nav{
     display: flex;

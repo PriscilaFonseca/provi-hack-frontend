@@ -12,10 +12,16 @@ h2, h3{
 }
 
 h3{
-    width: 80px;
     font-size: 20px;
-    margin: 30px 0;
-    border-bottom: 3px #E0DCFA solid;
+    margin: 30px 0 0;
+    
+}
+
+hr{
+    width: 80px;
+    border-bottom: 3px #6651E4 solid;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 button{

@@ -54,3 +54,7 @@ p#contato a{
     color: #6651e4;
     font-weight: 700;
 }
+
+p#contato a:hover{
+    color: #3a2a96;
+}
