@@ -1,0 +1,86 @@
+/* dropdown */
+
+#dropdown{
+    position: relative;
+}
+
+#dropdown label{
+    text-align: center;
+    padding-right: 10px;
+}
+
+#dropdown ul{
+    padding: 10px 0;
+    position:absolute;
+    background-color: #f6f6f6;
+    border: 0.5px #cecece solid;
+    border-radius: 8px;
+    display: none;
+    
+}
+
+#dropdown:hover ul, #dropdown.over ul{
+    display:block;
+}
+
+#dropdown ul a{
+    text-align: end;
+}
+
+#dropdown ul a:hover{
+    color: black;
+    font-weight: 700;
+}
+
+#dropdown ul a li{
+    display:block;
+    width: 120px;
+    padding-right: 10px;
+}
+
+h1{
+    margin: 100px auto 50px;
+    font-weight: 700;
+}
+
+/* cards desafios */
+
+div.desafio-card{
+    margin: 20px auto;
+    height: 60px;
+    background-color: #F6F4FF;
+    padding: 0 30px;
+    border-radius: 5px;
+}
+
+div.desafio-card:hover{
+    background-color: #e3e2ec;
+}
+
+a.link-desafio{
+    height: 100%;
+}
+
+a.link-desafio p{
+    margin: 0;
+}
+
+a.link-desafio:hover{
+    color: #4e4e4e;
+}
+
+div.stack{
+    height: 28px;
+    background-color: #E0DCFA;
+    width: 125px;
+    border-radius: 2px;
+}
+
+div.status{
+    margin-left: 20px;
+    height: 28px;
+    background-color:#27AE60;
+    color: white;
+    width: 125px;
+    border-radius: 2px;
+}
