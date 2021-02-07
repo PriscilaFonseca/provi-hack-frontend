@@ -17,7 +17,7 @@
             <a href=""><li>O que é</li></a>
             <a href="./desafios.html"><li>Desafios</li></a>
             <li id="dropdown">
-                <label for="dropdown">Fulano</label> 
+                <label for="dropdown" id="nome-menu"><!-- nome --></label> 
                 <img src="./icons/dropdwon.svg" alt="seta para baixo">
                 <ul>
                     <a href="./meus-desafios.html"><li>Meus Desafios</li></a>
@@ -31,46 +31,33 @@
         <section id="dados">
             <div class="row col-md-10 m-auto">
                 <div class="col-md-6" id="pessoais">
-                    <h2 class="font-1">Fulano da Silva</h2>
-                    <p class="col-md-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget rhoncus risus. Suspendisse tortor elit, porta quis vulputate quis, malesua
-
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget rhoncus risus.</p>
+                    <h2 class="font-1" id="nome"><!-- nome --></h2>
+                    <p class="col-md-12" id="descricao"><!-- descrição --></p>
                     <div class="d-flex justify-content-evenly" id="contatos">
-                        <a href="">LinkedIn</a>
-                        <a href="">GitHub</a>
-                        <a href="">Behance</a>
-                        <a href="">Medium</a>
+                        <a href="" id="linkedin">LinkedIn</a>
+                        <a href="" id="github">GitHub</a>
+                        <a href="" id="behance">Behance</a>
+                        <a href="" id="medium">Medium</a>
                     </div>
                 </div>
                 <div class="col-md-3" id="profissionais">
                     <h3 class="font-3">Interesse</h3>
-                    <p>Frontend</p>
+                    <p id="stack-fav"><!-- Preferência de Stack --></p>
 
                     <h3 class="font-3">Tecnologias</h3>
-                    <p>Javascript, React, HTML/CSS, Vue.js</p>
+                    <p id="tecnologias"><!-- Tecnologias --></p>
                 </div>
             </div>
             <img src="./icons/imagotipo.png" alt="imagotipo da marca">
         </section>
         <section class="col-md-10 m-auto" id="desafios">
-            <h2>1 Desafio Realizado</h2>
+            <h2 id="num-desafios"><!-- contagem desafios --></h2>
             <hr>
-
-            <div id="card-desafio-realizado">
-                <div class="d-flex justify-content-between align-items-center" id="info-desafio">
-                    <p class="font-4 m-0"> <strong>Desafio:</strong> Página de apresentação de candidato</p>
-                    <div class="stack font-4 d-flex justify-content-center align-items-center"> FRONTEND </div>
-                </div>
-                <div id="mais-infos">
-                    <p class="font-4">
-                        Projeto complexo e perfeito para entender mais do cenário em qual o .NET é utilizado no dia a dia dos profissionais. Entendi mais sobre regra de negócios e obtive um resultado satisfatório!
-                    </p>
-                    <p class="font-4"> <strong>Tecnologias Utilizadas:</strong> 
-                        .NET</p>
-                    <a href="#">Confira o projeto completo</a>
-                </div>
+            <div id="secao-desafios">
+                <!-- Desafios -->
             </div>
         </section>
+        <script src="./scrypts/perfil.js"></script>
     </main>
 </body>
 </html>

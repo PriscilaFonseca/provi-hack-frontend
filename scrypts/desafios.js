@@ -3,7 +3,7 @@ var cardAtual;
 var novoCard;
 var corStack;
 
-window.addEventListener('load', function desafio(){
+window.addEventListener('load', function desafios(){
 
     fetch('https://fakestoreapi.com/products?limit=6')
             .then(res => res.json())
