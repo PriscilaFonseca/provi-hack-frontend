@@ -5,14 +5,13 @@ var corStack;
 
 window.addEventListener('load', function desafios(){
 
-    fetch('https://fakestoreapi.com/products?limit=6')
+    fetch('http://127.0.0.1:8000/api/challenge')
             .then(res => res.json())
             .then(json => {
-                json.forEach(desafio => {
-                    console.log(desafio)
+                json.challenges.forEach(desafio => {
 
                     /* cor por tipo de stack */
-                    switch(desafio.category) {
+                    switch(desafio.id_area_expertise) {
                         case "frontend":
                             corStack = "front"
                             break;
@@ -38,7 +37,7 @@ window.addEventListener('load', function desafios(){
                     <div class="desafio-card">
                         <a class="d-flex justify-content-between align-items-center link-desafio" href="./pagina-desafio.html?id=${desafio.id}">
                             <p class="font-3">${desafio.title}</p>
-                            <div class="stack ${corStack} font-4 d-flex justify-content-center align-items-center"> ${desafio.category.toUpperCase()} </div>
+                            <div class="stack ${corStack} font-4 d-flex justify-content-center align-items-center"> ${desafio.id_area_expertise.toUpperCase()} </div>
                         </a>
                     </div>
                     `
