@@ -15,7 +15,7 @@ loginBtn.addEventListener('click', () => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({"email":"Lari@user.com","password":"123456@"}),
+            body: JSON.stringify({"email":loginEmail.value,"password": LoginSenha.value}),
     })
         .then(res => res.json())
         .then(json => { 
