@@ -14,50 +14,55 @@ const divCards = document.getElementById('secao-desafios');
 var cardAtual;
 var novoCard;
 
-const cardId = window.location.href.split("?id=")[1]; //id do card
+const userId = window.location.href.split("?id=")[1]; //id do card
 
 window.addEventListener('load', function dados(){
 
-    fetch(`https://jsonplaceholder.typicode.com/users/1`)
+    fetch(`http://127.0.0.1:8000/api/user/${userId}`)
             .then(res => res.json())
-            .then(usuario => {
-                nomeMenu.innerText = usuario.name.split(' ')[0]; //primeiro nome
+            .then(json => {
+                    nomeMenu.innerText = json.user.name.split(' ')[0]; //primeiro nome
 
-                nome.innerText = usuario.name;
-                descricao.innerText = usuario.company.catchPhrase;
+                    nome.innerText = json.user.name;
+                    descricao.innerText = json.user.profile.bio;
 
-                console.log(usuario.id)
+                    json.user.profile.linkedin =! '' ? linkedin.href = `${json.user.profile.linkedin}` : linkedin.target = ''
+                    json.user.profile.github =! '' ? linkedin.href = `${json.user.profile.github}` : linkedin.target = ''
+                    json.user.profile.behance =! '' ? linkedin.href = `${json.user.profile.behance}` : linkedin.target = ''
+                    json.user.profile.medium =! '' ? linkedin.href = `${json.user.profile.medium}` : linkedin.target = ''
 
-                //usuario.id =! '' ? linkedin.href = 'https://www.linkedin.com/in/larrydiniz/' : linkedin.target = ''
-
-                linkedin.href = usuario.linkedin
-                github.href = usuario.github
-                behance.href = usuario.behance
-                medium.href = usuario.medium
-
-                interesse.innerText = usuario.website
-                tecnologias.innerText = usuario.street
+                    interesse.innerText = json.user.profile.main_technology
+                    tecnologias.innerText = json.user.profile.stacks
             })
 })
 
 window.addEventListener('load', function desafiosRealizados(){
 
-    fetch(`https://jsonplaceholder.typicode.com/posts?userId=1`)
+    fetch(`http://127.0.0.1:8000/api/challenge-completed/${userId}`, {
+        method: 'GET',   
+            headers: {
+                'Authorization': `${localStorage.getItem("AUTHENTICATED_TOKEN")}`,
+                'X-Requested-With': 'XMLHttpRequest' 
+            }
+        })
             .then(res => res.json())
             .then(json => {
+                console.log(json)
 
                 /* Numero de desafios */
-                if(json.length == 0){
+                if(json['challenges-completed'].length == 0){
                     numDesafios.innerText = "Nenhum desafio finalizado"
-                } else if (json.length == 1){
+                } else if (json['challenges-completed'].length == 1){
                     numDesafios.innerText = "1 Desafio Realizado"
                 } else {
-                    numDesafios.innerText = `${json.length} Desafios Realizados`
+                    numDesafios.innerText = `${json['challenges-completed'].length} Desafios Realizados`
                 }
 
-                json.forEach(desafio => {
+                json['challenges-completed'].forEach(desafio => {
 
-                    switch(desafio.id) {
+                    console.log(desafio)
+
+                    switch(desafio.used_techs) {
                         case "frontend":
                             corStack = "front"
                             break;
@@ -84,15 +89,15 @@ window.addEventListener('load', function desafiosRealizados(){
                     <div id="card-desafio-realizado">
                         <div class="d-flex justify-content-between align-items-center" id="info-desafio">
                             <p class="font-4 m-0"> <strong>Desafio:</strong> ${desafio.title}</p>
-                            <div class="stack ${corStack} font-4 d-flex justify-content-center align-items-center"> ${desafio.id} </div>
+                            <div class="stack ${corStack} font-4 d-flex justify-content-center align-items-center"> ${desafio.used_techs.toUpperCase()} </div>
                         </div>
                         <div id="mais-infos">
                             <p class="font-4">
-                                ${desafio.body}
+                                ${desafio.description}
                             </p>
                             <p class="font-4"> <strong>Tecnologias Utilizadas:</strong> 
                                 ${desafio.id}</p>
-                            <a href="#${desafio.id}">Confira o projeto completo</a>
+                            <a href="${desafio.link}" target="_blank">Confira o projeto completo</a>
                         </div>
                     </div> 
                     `

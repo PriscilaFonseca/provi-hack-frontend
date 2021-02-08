@@ -74,3 +74,9 @@ img#i3{
     bottom: 0;
     right: 0;
 }
+
+p#aviso{
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
